@@ -31,8 +31,8 @@ mongoose.connect(process.env.MONOGOB_URI, {
 })
     .then(() => {
         console.log('DB connected');
-        app.listen(process.env.port, () => {
-            console.log('Server started on port', process.env.port);
+        app.listen(process.env.PORT, () => {
+            console.log('Server started on PORT', process.env.PORT);
         });
     })
     .catch((error) => {
