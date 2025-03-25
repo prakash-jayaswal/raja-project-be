@@ -21,6 +21,10 @@ app.use('/DoctorCategory', DoctourRouter);
 app.use('/Package', PackageRouter);
 app.use('/bill', BillRouter);
 
+app.get('/', (req, res) => {
+  res.send('Backend is running on Vercel!');
+});
+
 app.get('/test', (req, res) => {
     return res.status(200).send({ message: "SERVER WORKING" })
 })
